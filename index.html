@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="/assets/play-on-parent-marker-visible.js"></script>
+        <script src="assets/play-on-parent-marker-visible.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
@@ -16,8 +16,11 @@
             id="scene"
             embedded
             gesture-detector
-                 <id="audiodach" src="assets/Audio_Dach.mp3" preload="auto"></audio>
         >
+            <a-assets>
+                <audio id="audiodach" src="assets/Audio_Dach.mp3" preload="auto"></audio>
+            </a-assets>
+           
             <a-marker
                 id="animated-marker"
                 type="pattern"
